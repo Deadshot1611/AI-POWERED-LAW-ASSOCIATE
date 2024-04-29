@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 , shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Neural Diffusers">
+
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="x-icon/image" href="./img/favicon.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="./vendor/bootstrap/bootstrap.min.css">
+
+  <!-- Font Awesome Icon CSS -->
+  <link rel="stylesheet" type="text/css" href="./vendor/fontawesome/all.min.css">
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="./vendor/owl-carousel/owl.carousel.min.css">
+
+  <link rel="stylesheet" type="text/css" href="./vendor/owl-carousel/owl.theme.default.min.css">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" type="text/css" href="./vendor/animate/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+
+  <title>Law Associate || Neural Diffusers</title>
+  <style>
+    #hammer-icon {
+      font-size: 24px;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      color: #ffa500;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .animate {
+      animation: hammer-animation 1s ease-in-out;
+    }
+
+    @keyframes hammer-animation {
+      0% {
+        transform: translate(50%, 50%) rotate(0deg) scale(1);
+      }
+      25% {
+        transform: translate(50%, -50%) rotate(-20deg) scale(1.5);
+        color: #ff0000;
+        text-shadow: 4px 4px 6px rgba(255, 0, 0, 0.5);
+      }
+      50% {
+        transform: translate(50%, 50%) rotate(0deg) scale(5);
+        color: #00ff00;
+        text-shadow: 4px 4px 6px rgba(0, 255, 0, 0.5);
+      }
+      75% {
+        transform: translate(50%, 150%) rotate(20deg) scale(1.5);
+        color: #0000ff;
+        text-shadow: 4px 4px 6px rgba(0, 0, 255, 0.5);
+      }
+      100% {
+        transform: translate(50%, 50%) rotate(0deg) scale(1);
+        color: #ffa500;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    #click-me {
+      position: fixed;
+      bottom: 0;
+      right: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+      background-color: beige;
+      padding: 5px 20px;
+      border-radius: 20px 20px 0 0;
+      box-shadow: 2px -2px 4px rgba(0, 0, 0, 0.3);
+      animation: pulse 2s infinite;
+      display: flex;
+      align-items: center;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    #click-me.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    #click-me::after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid #2b2727;
+      margin-left: 10px;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body id="page-top">
+
+
+  <!-- Navigation Menu Start -->
+  <header id="header" >
+    <nav class="navbar navbar-light navbar-expand-lg main" id="mainNav">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <img src="img/logo1.jpg" style="max-width: 20%; height: auto;" alt="Logo" class="img-fluid">
+          <span></span>
+          <label>Legal Answers At Your Fingertips</label>
+        </a>
+
+        <!-- Toggle Button -->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarResponsive" area-controls="navbarResponsive
+        " aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Menu Start-->
+        <div class="collapse navbar-collapse" id="navbarResponsive" >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about-us">AI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#practice-area">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#lawyers">Benefits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#publications">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Nav Menu End-->
+      </div>
+    </nav>
+  </header>
+  <!-- Navigation Menu End -->
+
+
+  <!-- Introduction Start -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content wow bounceInUp">
+        <div class="row">
+          <div class="col-md-5 offset-md-2">
+            <div class="hero-heading">
+              <h1 class="text-light">AI Powered Law Associate</h1>
+              <h5 class="text-light">Enhancing Productivity Of Law Firms</h5>
+            </div>
+          </div>
+          <div class="col-md-5  pt-5">
+            <!--<button class="btn btn-custom">AI Powered Law Associate :Enhancing Productivity For Law Firms </button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Introduction End -->
+
+  <!-- About Our AI Section Start -->
+  <section id="about-us" style="background-color: #F5F5DC; background-size: cover;">
+    <div class="container">
+      <!-- About Heading -->
+      <div class="row">
+        <div class="col-md-7">
+          <div class="about-heading wow fadeInLeft">
+            <h1>About Our AI Assistant</h1>
+            <p>
+              An AI-powered law associate chatbot to assist law firms in streamlining their workflow and enhancing their productivity.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Content -->
+      <div class="row pt-5">
+        <div class="col-md-6">
+          <!-- Highlights -->
+          <h5>Highlights</h5>
+
+          <!-- 1 Start-->
+          <div class="row pt-3">
+            <div class="col-md-3 pl-4">
+              <h6>-</h6>
+            </div>
+            <div class="col-md-9">
+              <p>
+                Streamline research tasks
+              </p>
+            </div>
+            <!-- 1 End-->
+
+            <!-- 2 Start-->
+            <div class="col-md-3 pl-4">
+              <h6>-</h6>
+            </div>
+            <div class="col-md-9">
+              <p>
+                Provide strategic recommendations
+              </p>
+            </div>
+            <!-- 2 End-->
+
+            <!-- 3 Start-->
+            <div class="col-md-3 pl-4">
+              <h6>-</h6>
+            </div>
+            <div class="col-md-9">
+              <p>
+                Solve ethical dilemma
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- 3 End-->
+
+        <!-- Overview Start-->
+        <div class="col-md-5 pb-5 expertise">
+          <h5>Overview</h5>
+          <p>
+            An AI-powered law associate chatbot to assist law firms in streamlining their workflow and enhancing their productivity. The AI chatbot will leverage natural language processing (NLP) and machine learning algorithms to analyze and extract key information from legal case briefs, statutes, regulations, and court opinions.
+
+          </p>
+        </div>
+        <!-- Overview End -->
+      </div>
+      <!-- About Content End -->
+    </div>
+  </section>
+  <!-- About Our AI Section End -->
+
+  <!-- Uses Start -->
+  <section id="practice-area">
+    <div class="container text-light">
+      <!--  Heading Start -->
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="practice-heading wow fadeInLeft">
+            <h2 class="text-light">USES</h2>
+            <p>Our AI is capable of the following functionalities :</p>
+          </div>
+        </div>
+      </div>
+      <!-- Heading End -->
+
+      <!-- Uses Content Start -->
+      <div class="row pt-5">
+        <!-- Content 1 Start -->
+        <div class="col-md-5 offset-md-1">
+          <div class="row">
+            <div class="col-md-2 wow flipInX">
+              <img src="img/icon-one.png">
+            </div>
+            <div class="col-md-10">
+              <h4>Web Scraping</h4>
+              <p>
+              Unlock the vast expanse of legal knowledge on the web with our AI's web scraping capability. Seamlessly extract relevant data from online sources, including court decisions, legal articles, and statutes, to enrich your legal research and analysis.
+            </div>
+          </div>
+        </div>
+        <!-- 1 End  -->
+
+        <!-- Content 2 Start -->
+        <div class="col-md-5 offset-md-1">
+          <div class="row">
+            <div class="col-md-2 wow flipInX">
+              <img src="img/icon-two.png">
+            </div>
+            <div class="col-md-10">
+              <h4>Research Assistance</h4>
+              <p>
+                Based on the information extracted from legal documents, the chatbot will conduct thorough research on case law, precedents, and legal doctrines to provide lawyers with comprehensive insights and recommendations.
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Content 2 End -->
+      </div>
+
+      <div class="row pt-3">
+        <!-- Content 3 Start -->
+        <div class="col-md-5 offset-md-1">
+          <div class="row">
+            <div class="col-md-2 wow flipInX">
+              <img src="img/icon-three.png">
+            </div>
+            <div class="col-md-10">
+              <h4> Strategic Recommendations</h4>
+              <p>
+              The chatbot will generate strategic recommendations for case preparation and litigation based on its analysis of the legal documents and research findings. This could include suggesting potential arguments, identifying strengths and weaknesses in the case, and proposing legal strategies.
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Content 3 End  -->
+
+        <!-- Content 4 Start -->
+        <div class="col-md-5 offset-md-1">
+          <div class="row">
+            <div class="col-md-2 wow flipInX">
+              <img src="img/icon-four.png">
+            </div>
+            <div class="col-md-10">
+              <h4>Realtime Interaction</h4>
+              <p>
+                Engage in dynamic legal discussions with our AI, receiving real-time responses to your inquiries. Instantly analyze cases, explore legal concepts, and refine your strategies with responsive and interactive support.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Content 4 End -->
+      </div>
+      <!-- Uses Content End -->
+    </div>
+  </section>
+  <!-- Uses Area End -->
+
+  <!-- Chat with Our AI Start -->
+  <section id="lawyers" style="background-color: #F5F5DC; background-size: cover;">
+    <div class="container" >
+      <!-- Heading Start -->
+      <div class="row">
+        <div class="col-lg-7">
+          <!--  Heading Start -->
+          <div class="lawyers-heading wow fadeInLeft">
+            <h1>Chat With Our AI</h1>
+            <p>Our bot on a primary level provides you these options:</p>
+          </div>
+          <!-- Heading End -->
+        </div>
+      </div>
+      <!-- Heading End -->
+
+      <!-- Chat with Our AI Content Start -->
+      <div class="row pt-5">
+        <!-- 1st Content Start -->
+        <div class="col-md-3 col-sm-6">
+          <!-- Card Content -->
+          <div class="card">
+            <img src="img/team-one.png" alt="Team One" class="card-img-top">
+            <div class="card-body">
+              <h5>Legal Research</h5>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <!-- 1st Content End -->
+
+        <!-- 2nd Content Start -->
+        <div class="col-md-3 col-sm-6">
+          <!-- Card Content -->
+          <div class="card">
+            <img src="img/team-two.png" alt="Team Two" class="card-img-top">
+            <div class="card-body">
+              <h5>Analyze Cases</h5>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <!-- 2nd Content End -->
+
+        <!-- 3rd Content Start -->
+        <div class="col-md-3 col-sm-6 downteam">
+          <!-- Card Content -->
+          <div class="card">
+            <img src="img/team-three.png" alt="Team Three" class="card-img-top">
+            <div class="card-body">
+              <h5>Solve ethical dilemma</h5>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <!-- 3rd Content End -->
+
+        <!-- 4th Content Start -->
+        <div class="col-md-3 col-sm-6 downteam">
+          <!-- Card Content -->
+          <div class="card">
+            <img src="img/team-four.png" alt="Team Four" class="card-img-top">
+            <div class="card-body">
+              <h5>Recent Legal News</h5>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <!-- 4th Content End -->
+      </div>
+      <!--  Content End -->
+    </div>
+  </section>
+  <!-- Chat with Our AI Area End -->
+
+  <!-- Benefits Start -->
+  <section id="clients">
+    <div class="container text-light">
+      <!-- Heading Start -->
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="clients-heading wow fadeInLeft">
+            <h1 class="text-light">Benefits</h1>
+            <p>Our AI powered law associate comes along with a lot of benefits.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Heading End -->
+
+      <!-- Carousel Section Start -->
+      <div class="owl-carousel owl-theme">
+
+        <!-- Content Start -->
+        <div class="row pt-5">
+          <div class="col-md-4 offset-md-1 clients">
+            <div class="clients-img">
+              <img src="img/testimonial-one.jpg" alt="Clients Feedback" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="clients-message p-2 ml-3">
+              <p>By automating research and analysis tasks, the AI chatbot will help law firms save time and resources, allowing lawyers to focus on higher-value tasks such as case strategy and client interactions.
+              </p>
+              <h3 class="text-light"></h3>
+              <h6 class="text-light">Time Savings</h6>
+            </div>
+          </div>
+        </div>
+        <!-- Content End -->
+
+        <!-- Content Start -->
+        <div class="row pt-5">
+          <div class="col-md-4 offset-md-1 clients">
+            <div class="clients-img">
+              <img src="img/testimonial-two.jpg" alt="Clients Feedback" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="clients-message p-2 ml-3">
+              <p>The chatbot's ability to quickly process and analyze large volumes of legal documents will improve the efficiency of case preparation and litigation, reducing the risk of errors and oversight.
+              </p>
+              <h3 class="text-light"></h3>
+              <h6 class="text-light">Enhanced Efficiency</h6>
+            </div>
+          </div>
+        </div>
+        <!-- Content End -->
+
+        <!-- Content Start -->
+        <div class="row pt-5">
+          <div class="col-md-4 offset-md-1 clients">
+            <div class="clients-img">
+              <img src="img/testimonial-three.jpg" alt="Clients Feedback" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="clients-message p-2 ml-3">
+              <p>By providing comprehensive insights and recommendations, the chatbot will empower lawyers to make more informed decisions and develop stronger legal arguments.</p>
+              <h3 class="text-light"></h3>
+              <h6 class="text-light">Improved Decision-Making</h6>
+            </div>
+          </div>
+        </div>
+        <!-- Content End -->
+
+      </div>
+      <!-- Carousel Section End -->
+
+    </div>
+  </section>
+  <!-- Benefits Section End -->
+
+  <!-- Special Features Section Start -->
+  <section id="publications" style="background-color: #F5F5DC; background-size: cover;">
+    <div class="container" >
+      <!-- Heading Start -->
+      <div class="row pt-5">
+        <div class="col-lg-8">
+          <div class="publication-heading">
+            <h1>Special Features</h1>
+            <p>Allow users to conduct legal research by searching for specific laws, cases, or legal principles within your database or by accessing external legal databases.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--  Heading End -->
+
+      <!-- Content Start -->
+      <div class="row">
+        <!-- 1st Content Start -->
+        <div class="col-md-4 pbl wow fadeInLeft">
+          <div class="card publication-card">
+            <img src="img/publication-one.jpg" alt="Publication Image" class="card-img-top">
+
+            <div class="card-body">
+              <h4 class="card-title text-secondary">Case Summarization</h4>
+              <div>
+                <span></span>
+                <span></span>
+              </div>
+              <p class="card-text">
+                Provide users with summarized versions of legal cases, highlighting key points, precedents, and relevant legal principles.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <!-- 1st Content End -->
+
+        <!-- 2nd Content Start -->
+        <div class="col-md-4 pbl wow fadeInUp">
+          <div class="card publication-card">
+            <img src="img/publication-two.jpg" alt="Publication Image" class="card-img-top">
+
+            <div class="card-body">
+              <h4 class="card-title text-secondary">Statutory Interpretation</h4>
+              <div class="">
+                <span></span>
+                <span></span>
+              </div>
+              <p class="card-text">
+              Assist users in interpreting statutes and regulations by analyzing language, context, and relevant case law. The goal of statutory interpretation is to determine the legal meaning of legislation, or the meaning that conveys the legislative intention.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <!-- 2nd Content End -->
+
+        <!-- 3rd Content Start -->
+        <div class="col-md-4 pbl wow fadeInRight">
+          <div class="card publication-card">
+            <img src="img/publication-three.jpg" alt="Publication Image" class="card-img-top">
+
+            <div class="card-body">
+              <h4 class="card-title text-secondary">Legal Database Integration</h4>
+              <div>
+                <span></span>
+                <span></span>
+              </div>
+              <p class="card-text">
+              Integration with legal databases and repositories to access a vast collection of legal documents, enabling the chatbot to provide up-to-date and relevant information.
+              </p>
+            </div>
+            <div class="card-footer">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <!-- 3rd Content End -->
+      </div>
+      <!--  Content End -->
+    </div>
+  </section>
+  <!-- Special Features Section End -->
+
+
+  <!-- FAQ Section Start -->
+  <section id="faq">
+    <div class="container text-light">
+      <!-- FAQ Heading Start -->
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="faq-heading wow fadeInLeft">
+            <h1 class=" text-light">Frequently asked questions</h1>
+            <p>
+              Solve your query using our legal assistant chatbot:
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Heading End -->
+
+      <div class="row pt-5">
+        <div class="col-md-6 offset-md-1">
+          <div class="faq-content-1" id="one">
+            <p>Can you provide an overview of the procedure for filing a civil suit in India?</p>
+          </div>
+          <div id="two">
+            <p>How do I change my custody and support orders?</p>
+          </div>
+          <div id="three">
+            <p>How to make a General Diary?</p>
+          </div>
+          <div id="four">
+            <p>What paperwork do I need to complete to file for divorce?</p>
+          </div>
+          <div id="five">
+            <p>How do I protect a business name?</p>
+          </div>
+          <div id="six">
+            <p>Should I incorporate my business?</p>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div class="faq-content-2 p-4">
+            <p>
+              Interactive Q&A: Allow users to engage in interactive Q&A sessions with the AI, where they can ask general legal questions, seek clarification on legal concepts, or discuss hypothetical scenarios.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ Heading End -->
+
+  <section id="contact" style="background-color: #F5F5DC; background-size: cover;>
+    <div class="container" >
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="contact-heading wow fadeInLeft">
+            <h1>Contact Us</h1>
+            <p>
+             Need us to customise the assistant for your firm? Fill up the form:
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-5">
+
+        <div class="col-md-4 offset-md-1">
+          <form method="post" action="https://api.web3forms.com/submit">
+            <div class="row">
+              <input type="hidden" name="access_key" value="7c254b5d-c077-46cc-94ee-f3d547cd4dd6">
+              <div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+              <div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+              <div class="col-12">
+                <textarea name="message" placeholder="Message"></textarea>
+              </div>
+              <div class="col-12">
+                <input type="submit" value="Send Message" />
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-md-4 offset-md-1 map-frame">
+          <div class="map">
+            <a href="#" class="image fit"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.743167840082!2d88.41237027483528!3d22.47628373649441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02722b05a38e87%3A0x276c0d30e6be12ea!2sNetaji%20Subhash%20Engineering%20College!5e0!3m2!1sen!2sin!4v1701687367227!5m2!1sen!2sin" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; 2024 | All rights reserved by Neural Diffusers</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- Add the hammer icon element -->
+  <span id="hammer-icon">&#9874;</span>
+
+  <!-- Voiceglow widget container -->
+  <div style="width: 0; height: 0;" id="VG_OVERLAY_CONTAINER">
+    <!-- Here is where Voiceglow renders the widget. -->
+    <!-- Set render to 'full-width' then adjust the width and height to 500px (for example) to render the chatbot itself without the popup. -->
+</div>
+
+  <!-- Click Me sign -->
+  <div id="click-me">Click Me</div>
+
+  <!-- Voiceglow widget embedding code -->
+  <script >
+    (function() {
+      window.VG_CONFIG = {
+        ID: "S9RX10F955",
+        region: 'na', // 'eu' or 'na' corresponding to Europe and North America
+        render: 'popup', // popup or full-width
+        stylesheets: [
+          // Base Voiceglow CSS
+          "https://storage.googleapis.com/voiceglow-cdn/vg_live_build/styles.css",
+          // Add your custom css stylesheets, Can also add relative URL ('/public/your-file.css)
+        ],
+      }
+      var VG_SCRIPT = document.createElement("script");
+      VG_SCRIPT.src = "https://storage.googleapis.com/voiceglow-cdn/vg_live_build/vg_bundle.js";
+      document.body.appendChild(VG_SCRIPT);
+    })()
+  </script>
+<script>
+const hammerIcon = document.getElementById('hammer-icon');
+    const voiceglowWidget = document.getElementById('VG_OVERLAY_CONTAINER');
+    const clickMe = document.getElementById('click-me');
+
+    let clickMeVisible = true;
+
+    voiceglowWidget.addEventListener('click', () => {
+      hammerIcon.classList.add('animate');
+      hideClickMe();
+      setTimeout(() => {
+        hammerIcon.classList.remove('animate');
+      }, 1000);
+    });
+
+    voiceglowWidget.addEventListener('mouseover', hideClickMe);
+
+    function hideClickMe() {
+      if (clickMeVisible) {
+        clickMe.classList.add('hidden');
+        clickMeVisible = false;
+      }
+    }
+  </script>
+  <!-- ========== Script Section Start ========== -->
+  <!-- JQuery JS -->
+  <script type="text/javascript" src="./vendor/jquery/jquery.min.js"></script>
+
+  <!-- Popper  JS -->
+  <script type="text/javascript" src="./vendor/jquery/popper.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script type="text/javascript" src="./vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- Font Awesome JS -->
+  <script type="text/javascript" src="./vendor/fontawesome/all.min.js"></script>
+
+  <!-- Wow -->
+  <script type="text/javascript" src="./vendor/wow/wow.min.js"></script>
+
+  <!-- Own Carousel JS -->
+  <script type="text/javascript" src="./vendor/owl-carousel/owl.carousel.min.js"></script>
+
+  <!-- JQuery Easing JS -->
+  <script type="text/javascript" src="./js/jquery.easing.min.js"></script>
+
+  <!-- Scrolling Nav JS -->
+  <script type="text/javascript" src="./js/scrolling-nav.js"></script>
+
+
+  <!-- Custom JS -->
+  <script type="text/javascript" src="./js/main.js"></script>
+  <!-- ========== Script Section End ========== -->
+
+</body>
+
+</html>
